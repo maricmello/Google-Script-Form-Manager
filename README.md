@@ -1,29 +1,29 @@
 # Google Sheets Automation Script
 
-Este repositório contém um conjunto de scripts em Google Apps Script para automação de tarefas em uma planilha do Google Sheets. O código implementa funcionalidades para cadastro de dados, limpeza de formulários e abertura de um dashboard externo.
+This repository contains a set of Google Apps Script code for automating tasks in a Google Sheets spreadsheet. The code implements features for data entry, form clearing, and opening an external dashboard.
 
-## Funcionalidades
+## Features
 
-### 1. **Cadastrar Dados**
-A função `cadastrarDados()` lê os dados de um formulário na aba "Formulario" e os insere na aba "BancoDeDados". Antes de salvar, é realizada uma verificação para garantir que todos os campos obrigatórios (da célula D5 até D34) foram preenchidos. Se algum campo estiver vazio, um alerta será exibido solicitando o preenchimento.
+### 1. **Register Data**
+The `cadastrarDados()` function reads data from a form in the "Formulario" tab and inserts it into the "BancoDeDados" tab. Before saving, it performs a check to ensure that all required fields (from cell D5 to D34) are filled. If any field is empty, an alert will be shown asking the user to complete the form.
 
-### 2. **Limpar Formulário**
-A função `limparFormulario()` apaga o conteúdo das células do formulário (intervalo D5:D34) na aba "Formulario", permitindo que o usuário preencha novos dados de forma fácil.
+### 2. **Clear Form**
+The `limparFormulario()` function clears the content of the form cells (range D5:D34) in the "Formulario" tab, allowing the user to easily fill out new data.
 
-### 3. **Abrir Dashboard**
-A função `abrirDashboard()` abre uma nova janela do navegador com um link especificado (atualmente configurado como um link placeholder, que deve ser substituído pelo URL desejado). O link será aberto em uma nova aba, enquanto o diálogo do Google Sheets será fechado.
+### 3. **Open Dashboard**
+The `abrirDashboard()` function opens a new browser window with a specified link (currently configured as a placeholder link, which should be replaced with the desired URL). The link will be opened in a new tab, and the Google Sheets dialog will be closed.
 
-## Como Utilizar
+## How to Use
 
-1. Implemente o script dentro de um documento do Google Sheets.
-2. Para cadastrar dados, preencha os campos na aba "Formulario" e acione a função de cadastro.
-3. Para limpar o formulário, use a função `limparFormulario()`, que apagará os dados preenchidos.
-4. Para acessar o dashboard, a função `abrirDashboard()` abrirá o link configurado em uma nova janela do navegador.
+1. Implement the script within a Google Sheets document.
+2. To register data, fill in the fields in the "Formulario" tab and trigger the data registration function.
+3. To clear the form, use the `limparFormulario()` function, which will erase the filled data.
+4. To access the dashboard, the `abrirDashboard()` function will open the configured link in a new browser window.
 
-## Objetivo
+## Objective
 
-O objetivo deste script é facilitar o processo de entrada de dados e navegação para dashboards de relatórios ou visualizações externas, tornando a experiência do usuário mais fluida e eficiente dentro do Google Sheets.
+The goal of this script is to streamline the data entry process and navigation to external dashboard reports or visualizations, making the user experience within Google Sheets more fluid and efficient.
 
 ---
 
-**Nota:** Substitua o link placeholder na função `abrirDashboard()` pelo URL do seu dashboard real.
+**Note:** Replace the placeholder link in the `abrirDashboard()` function with the actual URL of your dashboard.
